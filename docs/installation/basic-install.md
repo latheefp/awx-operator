@@ -78,7 +78,7 @@ kind: AWX
 metadata:
   name: awx-demo
 spec:
-  service_type: nodeport
+  service_type: NodePort
 ```
 
 > It may make sense to create and specify your own secret key for your deployment so that if the k8s secret gets deleted, it can be re-created if needed.  If it is not provided, one will be auto-generated, but cannot be recovered if lost. Read more [here](#secret-key-configuration).
